@@ -1,6 +1,13 @@
 {
-  "search": {
-    "message":"Search for examples"
-    ,"description":"Search Nullege for examples."
-  }
+    "search": {
+        "message": "Search $name$ on nullege",
+        "description": "Search Nullege for examples.",
+        "placeholders": {
+            "name": {
+                "content": "$1",
+                "example": "'os.path.join', 'numpy'",
+                "description": "type of name of the class, method, or function."
+            }
+        }
+    }
 }
