@@ -77,9 +77,10 @@ function injectForClass(node, dl_element) {
         if (dd_node.children[i].nodeName === 'DL' &&
                 hasCSSClass(dd_node.children[i], 'method')) {
             dd_node.insertBefore(node, dd_node.children[i]);
-            break;
+            return;
         }
     }
+    dd_node.appendChild(node);
 }
 
 function createLinkNode(name) {
